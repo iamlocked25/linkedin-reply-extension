@@ -1,26 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// src/App.tsx
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React from 'react';
+
+const App: React.FC = () => {
+    return (
+        <div className="flex items-center justify-center h-screen bg-gray-100">
+            <h1 className="text-2xl font-bold">LinkedIn Reply Assistant</h1>
+            <p className="mt-4">This extension helps you generate replies to LinkedIn messages.</p>
+        </div>
+    );
+};
 
 export default App;

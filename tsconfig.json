@@ -1,26 +1,20 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+      "target": "es5",
+      "module": "commonjs",
+      "jsx": "react-jsx", 
+      "outDir": "./build/content", // Output directory for compiled content scripts
+      "rootDir": "./src",          // Where your TypeScript files are located
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "types": ["chrome"]
   },
   "include": [
-    "src"
+      "src/**/*"
+  ],
+  "exclude": [
+      "node_modules"
   ]
 }
